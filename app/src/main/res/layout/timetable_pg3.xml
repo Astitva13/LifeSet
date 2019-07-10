@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#444">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/mainx"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n\nTime\nTable"
+                android:textStyle="bold"
+                android:fontFamily="@font/fiesta"
+                android:textSize="100dp"
+                android:textColor="#FFF"/>
+            <GridLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="6"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#A1A1A1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/mon_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:shadowColor="#000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="1"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/tue_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#555"
+                            android:textStyle="bold"
+                            android:shadowColor="#ddd"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="2"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#A1A1A1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/wed_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:shadowColor="#000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="3"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/thu_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#555"
+                            android:textStyle="bold"
+                            android:shadowColor="#ddd"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="4"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#A1A1A1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/fri_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:shadowColor="#000"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="5"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/sat_f">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#555"
+                            android:textStyle="bold"
+                            android:shadowColor="#ddd"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40dp"
+                            android:layout_margin="10dp"
+                            android:text="Saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:padding="0dp"
+                            android:textSize="35dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:onClick="add_act"
+                            android:tag="6"/>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+        </GridLayout>
+            <GridLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#222"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true">
+
+                        <TextView
+                            android:id="@+id/pthead"
+                            android:textColor="#FFF"
+                            android:textStyle="bold"
+                            android:shadowColor="#aaa"
+                            android:shadowDx="4"
+                            android:shadowDy="4"
+                            android:shadowRadius="4"
+                            android:fontFamily="@font/fiesta"
+                            android:textSize="40sp"
+                            android:layout_margin="10dp"
+                            android:text="PT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="20sp"
+                            android:id="@+id/pttf"
+                            app:showText="false"
+                            app:thumbTint="#fff"
+                            app:trackTint="#aaa"
+                            android:onClick="swt"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/pt_hidden"
+                            android:layout_below="@id/pthead">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:textAlignment="gravity">
+
+                                <TextView
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:shadowColor="#000"
+                                    android:fontFamily="@font/fiesta"
+                                    android:textSize="25sp"
+                                    android:layout_margin="10dp"
+                                    android:text="Time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <RadioGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10sp"
+                                    android:checkedButton="@id/morn">
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Morning"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/fiesta"
+                                        android:textColor="#fff"
+                                        android:buttonTint="#fff"
+                                        android:checked="true"
+                                        android:id="@+id/morn"/>
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Evening"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/fiesta"
+                                        android:textColor="#fff"
+                                        android:buttonTint="#fff"
+                                        android:id="@+id/even"/>
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:textAlignment="gravity"
+                                android:layout_marginLeft="5sp">
+
+                                <TextView
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:shadowColor="#000"
+                                    android:fontFamily="@font/fiesta"
+                                    android:textSize="25sp"
+                                    android:layout_margin="10dp"
+                                    android:text="Days"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                                <RadioGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10sp"
+                                    android:checkedButton="@id/mwf">
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="MWF"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/fiesta"
+                                        android:textColor="#fff"
+                                        android:buttonTint="#fff"
+                                        android:id="@+id/mwf"/>
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TTS"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/fiesta"
+                                        android:textColor="#fff"
+                                        android:buttonTint="#fff"
+                                        android:id="@+id/tts"/>
+
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Daily"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/fiesta"
+                                        android:textColor="#fff"
+                                        android:buttonTint="#fff"
+                                        android:id="@+id/daily"/>
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:columnOrderPreserved="false"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="100dp"
+            android:animateLayoutChanges="true">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#000"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="10dp"
+                android:tag="1"
+                android:onClick="pg3"
+                app:contentPadding="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/fiesta"
+                    android:textColor="#FFF"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#000"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:tag="2"
+                android:onClick="pg3"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/fiesta"
+                    android:textColor="#FFF"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
