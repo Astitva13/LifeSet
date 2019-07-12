@@ -33,18 +33,15 @@
                 android:layout_height="wrap_content"
                 android:text="College Name:"
                 android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/heading"
                 android:textSize="30dp"/>
 
             <EditText
                 android:textColor="#DDD"
                 android:id="@+id/collegename"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="5"
                 android:textSize="25dp"
-                android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/collegename_feild"/>
+                android:fontFamily="@font/fiesta"/>
 
             <TextView
                 android:textColor="#FFF"
@@ -53,19 +50,33 @@
                 android:layout_height="wrap_content"
                 android:text="College year:"
                 android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/collegename"
                 android:textSize="30dp"/>
 
-            <EditText
-                android:textColor="#FFF"
-                android:id="@+id/collegeyr"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="5"
-                android:inputType="number"
-                android:textSize="25dp"
-                android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/collegeyr_feild"/>
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textColor="#FFF"
+                    android:id="@+id/collegeyr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/fiesta"/>
+                <EditText
+                    android:textColor="#FFF"
+                    android:id="@+id/collegeyr_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:editable="false"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/fiesta"/>
+
+            </LinearLayout>
+
 
 
         </LinearLayout>

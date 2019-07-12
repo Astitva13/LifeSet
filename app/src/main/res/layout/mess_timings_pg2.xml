@@ -6,18 +6,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="15dp"
+            android:layout_marginHorizontal="15sp"
             android:layout_gravity="center">
 
             <TextView
-                android:id="@+id/heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mess\nTimings"
@@ -26,68 +25,56 @@
                 android:textSize="80dp"/>
 
             <TextView
-                android:id="@+id/breakfast_field"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Breakfast timings"
                 android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/heading"
                 android:textSize="30dp"/>
 
             <EditText
                 android:id="@+id/breakfast"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="5"
+                android:ems="10"
                 android:textSize="20dp"
-                android:tag="1"
-                android:layout_below="@+id/breakfast_field"
-                android:onClick="timech"/>
+                android:tag="a1"
+                android:editable="false"/>
 
             <TextView
-                android:id="@+id/lunch_field"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lunch Timings"
                 android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/breakfast"
                 android:textSize="30dp"/>
 
             <EditText
                 android:id="@+id/lunch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="5"
-                android:onClick="timech"
-                android:inputType="number"
-                android:tag="2"
+                android:ems="10"
                 android:textSize="20dp"
-                android:layout_below="@+id/lunch_field"/>
+                android:tag="a2"
+                android:editable="false"/>
 
             <TextView
-                android:id="@+id/dinner_field"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lunch Timings"
                 android:fontFamily="@font/fiesta"
-                android:layout_below="@+id/lunch"
                 android:textSize="30dp"/>
 
             <EditText
                 android:id="@+id/dinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="5"
-                android:inputType="number"
+                android:ems="10"
                 android:textSize="20dp"
-                android:tag="3"
-                android:onClick="timech"
-                android:layout_below="@+id/dinner_field"/>
+                android:tag="a3"
+                android:editable="false"/>
 
 
         </LinearLayout>
         <GridLayout
-            android:layout_below="@+id/dinner"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

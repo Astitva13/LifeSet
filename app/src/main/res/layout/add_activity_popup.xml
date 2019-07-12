@@ -12,7 +12,6 @@
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         app:cardCornerRadius="30sp"
-        app:contentPadding="10dp"
         android:layout_margin="5dp">
 
         <LinearLayout
@@ -29,21 +28,7 @@
                 android:textSize="40sp"
                 android:textColor="#444"
                 android:fontFamily="@font/fiesta"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Time"
-                android:textSize="30sp"
-                android:textColor="#444"
-                android:fontFamily="@font/fiesta"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="5"
-                android:textColor="#911077"
-                android:textSize="30sp"
-                android:fontFamily="@font/fiesta"
-                android:gravity="center"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,11 +39,29 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="5"
+                android:ems="10"
                 android:textColor="#911077"
                 android:textSize="30sp"
                 android:fontFamily="@font/fiesta"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:id="@+id/detailsx"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="30sp"
+                android:textColor="#444"
+                android:fontFamily="@font/fiesta"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#911077"
+                android:textSize="30sp"
+                android:fontFamily="@font/fiesta"
+                android:gravity="center"
+                android:editable="false"
+                android:id="@+id/timex"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,7 +142,8 @@
                     app:cardCornerRadius="10dp"
                     android:tag="1"
                     app:contentPadding="10dp"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    android:onClick="addx">
 
                     <TextView
                         android:layout_width="wrap_content"

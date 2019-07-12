@@ -46,49 +46,49 @@
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
                     android:layout_margin="12dp"
-                    android:id="@+id/mon_f">
+                    android:paddingBottom="5sp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#FFF"
-                            android:textStyle="bold"
-                            android:shadowColor="#000"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Monday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="1"/>
-
-
-                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/mon_f">
 
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#FFF"
+                                android:textStyle="bold"
+                                android:shadowColor="#000"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Monday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="1"/>
+
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 
@@ -101,49 +101,48 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="12dp"
-                    android:id="@+id/tue_f">
+                    android:layout_margin="12dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#555"
-                            android:textStyle="bold"
-                            android:shadowColor="#ddd"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Tuesday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="2"/>
-
-
-                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/tue_f">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:shadowColor="#ddd"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Tuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="2"/>
+
+
+                        </RelativeLayout>
 
 
                     </LinearLayout>
@@ -157,49 +156,47 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="12dp"
-                    android:id="@+id/wed_f">
+                    android:layout_margin="12dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#FFF"
-                            android:textStyle="bold"
-                            android:shadowColor="#000"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Wednesday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="3"/>
-
-
-                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/wed_f">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#FFF"
+                                android:textStyle="bold"
+                                android:shadowColor="#000"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Wednesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="3"/>
+
+
+                        </RelativeLayout>
 
 
                     </LinearLayout>
@@ -213,50 +210,47 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="12dp"
-                    android:id="@+id/thu_f">
+                    android:layout_margin="12dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#555"
-                            android:textStyle="bold"
-                            android:shadowColor="#ddd"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Thursday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="4"/>
-
-
-                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/thu_f">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:shadowColor="#ddd"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Thursday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
 
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="4"/>
+
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 
@@ -269,50 +263,48 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="12dp"
-                    android:id="@+id/fri_f">
+                    android:layout_margin="12dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#FFF"
-                            android:textStyle="bold"
-                            android:shadowColor="#000"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Friday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="5"/>
-
-
-                    </RelativeLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/fri_f">
 
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#FFF"
+                                android:textStyle="bold"
+                                android:shadowColor="#000"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Friday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="5"/>
+
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 
@@ -325,50 +317,47 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="12dp"
-                    android:id="@+id/sat_f">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textColor="#555"
-                            android:textStyle="bold"
-                            android:shadowColor="#ddd"
-                            android:shadowDx="4"
-                            android:shadowDy="4"
-                            android:shadowRadius="4"
-                            android:fontFamily="@font/fiesta"
-                            android:textSize="40dp"
-                            android:layout_margin="10dp"
-                            android:text="Saturday"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"/>
-
-                        <Button
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/round_button"
-                            android:gravity="center_vertical|center_horizontal"
-                            android:text="+"
-                            android:padding="0dp"
-                            android:textSize="35dp"
-                            android:textColor="#000"
-                            android:layout_alignParentRight="true"
-                            android:layout_margin="10dp"
-                            android:onClick="add_act"
-                            android:tag="6"/>
-
-
-                    </RelativeLayout>
+                    android:layout_margin="12dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center">
+                        android:id="@+id/sat_f">
 
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:shadowColor="#ddd"
+                                android:shadowDx="4"
+                                android:shadowDy="4"
+                                android:shadowRadius="4"
+                                android:fontFamily="@font/fiesta"
+                                android:textSize="40dp"
+                                android:layout_margin="10dp"
+                                android:text="Saturday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_button"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="+"
+                                android:padding="0dp"
+                                android:textSize="35dp"
+                                android:textColor="#000"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                android:onClick="add_act"
+                                android:tag="6"/>
+
+
+                        </RelativeLayout>
 
                     </LinearLayout>
 
