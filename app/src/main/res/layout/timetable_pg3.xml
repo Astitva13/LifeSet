@@ -71,7 +71,8 @@
                                 android:text="Monday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -84,7 +85,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="1"/>
 
 
@@ -125,7 +126,8 @@
                                 android:text="Tuesday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -138,7 +140,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="2"/>
 
 
@@ -179,7 +181,8 @@
                                 android:text="Wednesday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -192,7 +195,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="3"/>
 
 
@@ -233,7 +236,8 @@
                                 android:text="Thursday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -246,7 +250,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="4"/>
 
 
@@ -287,7 +291,8 @@
                                 android:text="Friday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -300,7 +305,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="5"/>
 
 
@@ -340,7 +345,8 @@
                                 android:text="Saturday"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"/>
+                                android:layout_centerVertical="true"
+                                android:tag="dayname"/>
 
                             <Button
                                 android:layout_width="50dp"
@@ -353,7 +359,7 @@
                                 android:textColor="#000"
                                 android:layout_alignParentRight="true"
                                 android:layout_margin="10dp"
-                                android:onClick="add_act"
+                                android:onClick="addActivity_popup"
                                 android:tag="6"/>
 
 
@@ -445,7 +451,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="10sp"
-                                    android:checkedButton="@id/morn">
+                                    android:checkedButton="@id/morn"
+                                    android:id="@+id/pttime">
 
                                     <RadioButton
                                         android:layout_width="wrap_content"
@@ -495,7 +502,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="10sp"
-                                    android:checkedButton="@id/mwf">
+                                    android:checkedButton="@id/mwf"
+                                    android:id="@+id/ptday">
 
                                     <RadioButton
                                         android:layout_width="wrap_content"

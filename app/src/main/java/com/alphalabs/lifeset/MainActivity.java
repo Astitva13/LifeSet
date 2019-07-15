@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,20 +21,19 @@ public class MainActivity extends AppCompatActivity {
         /*pregen code*/super.onCreate(savedInstanceState);
 
         //to make status bar transparent
-        if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        }
         //
-
-        setContentView(R.layout.activity_main);
         changeStatusBarColor();
+        setContentView(R.layout.activity_main);
+        DbConnect db = new DbConnect(this);
+        ((TextView)findViewById(R.id.txtname)).setText(db.getUname());
+        ((TextView)findViewById(R.id.txtdte)).setText(new SimpleDateFormat("EEEE, dd MMM  `yy").format(new Date()));
+
     }
     //making transparent function
     private void changeStatusBarColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.parseColor("#48000000"));
-        }
     }
 }
